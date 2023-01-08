@@ -1,0 +1,17 @@
+.NavigationBar {
+    position: fixed;
+    top: 0;
+    left: 4rem;
+    right: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(7,7,7,.93);
+}
+
+.NavigationBarItems {
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
+}

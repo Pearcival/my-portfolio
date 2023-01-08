@@ -1,0 +1,18 @@
+.Home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.AvatarContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Avatar {
+    height: 28rem;
+    width: 28rem;
+    border-radius: 50%;
+}

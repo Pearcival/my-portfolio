@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "name": "Javascript",
+            "pathToLogo": "/images/logo-javascript.svg"
+        },
+        {
+            "name": "Typescript",
+            "pathToLogo": "/images/logo-typescript.svg"
+        },
+        {
+            "name": "NodeJs",
+            "pathToLogo": "/images/logo-nodejs.svg"
+        },
+        {
+            "name": "React",
+            "pathToLogo": "/images/logo-react.svg"
+        },
+        {
+            "name": "Express",
+            "pathToLogo": "/images/logo-express.svg",
+            "invertedBackground": true
+        },
+        {
+            "name": "Java",
+            "pathToLogo": "/images/logo-java.svg"
+        },
+        {
+            "name": "HTML",
+            "pathToLogo": "/images/logo-html.svg"
+        },
+        {
+            "name": "CSS",
+            "pathToLogo": "/images/logo-css.svg"
+        },
+        {
+            "name": "Sass",
+            "pathToLogo": "/images/logo-sass.svg"
+        },
+        {
+            "name": "Material-UI",
+            "pathToLogo": "/images/logo-material-ui.svg"
+        },
+        {
+            "name": "Oracle SQL",
+            "pathToLogo": "/images/logo-oracle.svg"
+        },
+        {
+            "name": "MySQL",
+            "pathToLogo": "/images/logo-mysql.svg"
+        },
+        {
+            "name": "MongoDB",
+            "pathToLogo": "/images/logo-mongo.svg"
+        },
+        {
+            "name": "Azure",
+            "pathToLogo": "/images/logo-azure.svg"
+        },
+        {
+            "name": "AWS",
+            "pathToLogo": "/images/logo-aws.svg"
+        },
+        {
+            "name": "Cypress",
+            "pathToLogo": "/images/logo-cypress.svg",
+            "invertedBackground": true
+        },
+        {
+            "name": "Terraform",
+            "pathToLogo": "/images/logo-terraform.svg"
+        },
+        {
+            "name": "Docker",
+            "pathToLogo": "/images/logo-docker.svg"
+        },
+        {
+            "name": "Git",
+            "pathToLogo": "/images/logo-git.svg"
+        }
+    ]
+}

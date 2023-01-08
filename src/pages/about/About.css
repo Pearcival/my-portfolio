@@ -1,0 +1,10 @@
+.About {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Skills {
+    min-width: 45%;
+    max-width: 45%;
+}

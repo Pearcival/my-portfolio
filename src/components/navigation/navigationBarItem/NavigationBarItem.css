@@ -1,0 +1,9 @@
+.NavigationBarItem {
+    cursor: pointer;
+    padding: 1.3rem;
+}
+
+.Selected {
+    background-color: #1382ba;
+    font-weight: 500;
+}
