@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "./NavigationBarItem.css";
 
@@ -8,14 +9,24 @@ interface INavigationItemProps {
     selected: boolean,
 };
 
+const itemVariants = {
+    closed: { opacity: 0 },
+    open: { opacity: 1 },
+};
+
 const NavigationItem: React.FC<INavigationItemProps> = ({
     title,
     navigate,
     selected,
 }) => (
-    <span className={`NavigationBarItem ${selected ? "Selected" : ""}`} onClick={navigate}>
+    <motion.span
+        className={`NavigationBarItem ${selected ? "Selected" : ""}`}
+        onClick={navigate}
+        whileHover={{ scale: !selected ? 1.1 : "none" }}
+        variants={itemVariants}
+    >
         {title}
-    </span>
+    </motion.span>
 );
 
 export default NavigationItem;
