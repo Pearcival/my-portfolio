@@ -1,0 +1,13 @@
+.Link {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.LinkImage {
+    height: 4rem;
+    width: auto;
+    margin-right: 1rem;
+}

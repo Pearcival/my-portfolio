@@ -10,7 +10,7 @@ const Card: React.FC<ICard> = ({
 }) => (
     <div className="Card">
         <img className={`CardImage ${invertedBackground ? "White" : ""}`} src={pathToLogo} alt={name} />
-        <p style={{ margin: "0.5rem" }}>{name}</p>
+        <p style={{ margin: "0.5rem", textAlign: "center" }}>{name}</p>
     </div>
 );
 

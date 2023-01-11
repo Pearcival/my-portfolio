@@ -4,14 +4,49 @@
     left: 4rem;
     right: 4rem;
     height: 4rem;
+    background-color: rgba(7,7,7,.8);
+    z-index: 100;
+}
+
+.NavigationBarDesktop {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(7,7,7,.93);
+}
+
+.NavigationBarMobile {
+    display: none;
 }
 
 .NavigationBarItems {
     min-width: 250px;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .NavigationBar {
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .NavigationBarDesktop {
+        display: none;
+    }
+
+    .NavigationBarMobile {
+        display: block;
+        height: 60%;
+    }
+
+    .NavigationMenu {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+        background-color: black;
+    }
 }

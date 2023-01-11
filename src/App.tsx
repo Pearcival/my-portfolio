@@ -1,31 +1,38 @@
 import React from "react";
 import {
+  useLocation,
   Routes,
   Route,
 } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import Skills from "./pages/skills/Skills";
 import Work from "./pages/work/Work";
 import Contact from "./pages/contact/Contact";
-import Error from "./pages/error/Error";
 import Layout from "./hoc/layout/Layout";
 
 import "./App.css";
 
 const App = () => {
 
+  const location = useLocation();
+
   const routes = (
-    <Routes>
-      <Route path="/" element={<Home />} errorElement={<Error />} />
-      <Route path="about" element={<About />} errorElement={<Error />} />
-      <Route path="work" element={<Work />} errorElement={<Error />} />
-      <Route path="contact" element={<Contact />} errorElement={<Error />} />
-    </Routes>
+    <AnimatePresence>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="work" element={<Work />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </AnimatePresence>
   );
 
   return (
-    <Layout>
+    <Layout currentPage={location.pathname}>
       {routes}
     </Layout>
   );

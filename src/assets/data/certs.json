@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "name": "Oracle Certified Java Associate",
+            "pathToLogo": "/images/cert-oracle-associate.png"
+        },
+        {
+            "name": "Oracle Certified Java Professional",
+            "pathToLogo": "/images/cert-oracle-professional.png"
+        },
+        {
+            "name": "AWS Certified Developer",
+            "pathToLogo": "/images/cert-aws-developer.png"
+        },
+        {
+            "name": "Azure Fundamentals",
+            "pathToLogo": "/images/cert-azure-fundamentals.png"
+        },
+        {
+            "name": "Professional Scrum Developer",
+            "pathToLogo": "/images/cert-psd.png"
+        }
+    ]
+}

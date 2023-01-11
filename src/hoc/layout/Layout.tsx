@@ -1,14 +1,18 @@
 import React from "react";
-import NavBar from "../../components/navigation/navigationBar/NavigationBar";
+import NavigationBar from "../../components/navigation/navigationBar/NavigationBar";
 import "./Layout.css";
 
 interface ILayoutProps {
+    currentPage: string,
     children?: React.ReactNode
 };
 
-const Layout: React.FC<ILayoutProps> = ({ children }) => (
+const Layout: React.FC<ILayoutProps> = ({
+    currentPage,
+    children,
+}) => (
     <React.Fragment>
-        <NavBar/>
+        <NavigationBar currentPage={currentPage}/>
         <main className="Content" >
             {children}
         </main>

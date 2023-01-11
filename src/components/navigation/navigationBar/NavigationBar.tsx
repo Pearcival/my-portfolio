@@ -1,52 +1,74 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
+import MenuToggle from "../menuToggle/MenuToggle";
 import NavigationBarItem from "../navigationBarItem/NavigationBarItem";
 import "./NavigationBar.css";
 
-const NavigationBar: React.FC = () => {
+interface INavigationBarProps {
+    currentPage: string,
+};
 
-    const [selectedItem, setSelectedItem] = useState<string>();
+const NavigationBar: React.FC<INavigationBarProps> = ({ currentPage }) => {
+
     const navigate = useNavigate();
-    const location = useLocation();
-
-    useEffect(() => {
-        setSelectedItem(location.pathname);
-    }, [location.pathname]);
+    const [navigationMenuActive, setNavigationMenuActive] = useState<boolean>(false);
 
     return (
-        <div className="NavigationBar">
-            <div className="NavigationBarItems">
-                <NavigationBarItem
-                    title="Home"
-                    navigate={() => {
-                        navigate("/");
-                    }}
-                    selected={selectedItem === "/"}
-                />
-                <NavigationBarItem
-                    title="About"
-                    navigate={() => {
-                        navigate("/about");
-                    }}
-                    selected={selectedItem === "/about"}
-                />
-                <NavigationBarItem
-                    title="Work"
-                    navigate={() => {
-                        navigate("/work");
-                    }}
-                    selected={selectedItem === "/work"}
-                />
+        <>
+            <div className="NavigationBar">
+                <div className="NavigationBarDesktop">
+                    <div className="NavigationBarItems">
+                        <NavigationBarItem
+                            title="Home"
+                            navigate={() => {
+                                navigate("/");
+                            }}
+                            selected={currentPage === "/"}
+                        />
+                        <NavigationBarItem
+                            title="About"
+                            navigate={() => {
+                                navigate("/about");
+                            }}
+                            selected={currentPage === "/about"}
+                        />
+                        <NavigationBarItem
+                            title="Skills"
+                            navigate={() => {
+                                navigate("/skills");
+                            }}
+                            selected={currentPage === "/skills"}
+                        />
+                        <NavigationBarItem
+                            title="Work"
+                            navigate={() => {
+                                navigate("/work");
+                            }}
+                            selected={currentPage === "/work"}
+                        />
+                    </div>
+                    <NavigationBarItem
+                        title="Contact"
+                        navigate={() => {
+                            navigate("/contact");
+                        }}
+                        selected={currentPage === "/contact"}
+                    />
+                </div>
+                <div className="NavigationBarMobile">
+                    <MenuToggle
+                        active={navigationMenuActive}
+                        handleClick={() => setNavigationMenuActive(!navigationMenuActive)}
+                    />
+                </div>
             </div>
-            <NavigationBarItem
-                    title="Contact"
-                    navigate={() => {
-                        navigate("/contact");
-                    }}
-                    selected={selectedItem === "/contact"}
-                />
-        </div>
+            {navigationMenuActive &&
+                <div className="NavigationMenu">
+
+                </div>
+            }
+        </>
     );
 };
 

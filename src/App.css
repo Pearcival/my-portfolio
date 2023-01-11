@@ -1,4 +1,9 @@
-.PageContent {
-    min-width: 50%;
-    max-width: 50%;
+.FlexJustifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.FlexAlignCenter {
+    display: flex;
+    align-items: center;
 }

@@ -15,7 +15,7 @@ const CardGrid: React.FC<ICardGridProps> = ({
         <Grid container spacing={2}>
             {
                 cardData.map((card) => (
-                    <Grid item xs={6} sm={6} md={4} lg={3}>
+                    <Grid item xs={4} sm={3} md={2} key={card.name}>
                         <Card
                             name={card.name}
                             pathToLogo={card.pathToLogo}

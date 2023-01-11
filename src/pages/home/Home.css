@@ -1,18 +1,23 @@
-.Home {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.AvatarContainer {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Avatar {
-    height: 28rem;
-    width: 28rem;
+.AvatarDesktop {
+    height: 24rem;
+    width: auto;
     border-radius: 50%;
+    display: block;
+}
+
+.AvatarMobile {
+    height: 16rem;
+    width: auto;
+    border-radius: 50%;
+    display: none;
+    margin-left: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .AvatarDesktop {
+        display: none;
+    }
+    .AvatarMobile {
+        display: block;
+    }
 }
