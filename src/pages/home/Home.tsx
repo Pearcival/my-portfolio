@@ -16,7 +16,7 @@ const Home = () => (
                     </div>
                     <h1>A Software Developer from the UK.</h1>
                     <h3>
-                        Initially self-taught, I'm a Web Developer with ten years of experience and in-depth knowledge of several technologies and languages.
+                        Initially self-taught, I'm a Web Developer with ten years experience and an in-depth knowledge of several technologies and languages.
                     </h3>
                     <h3>
                         I create applications that help customers solve business challenges and bring their technical strategies to life.
