@@ -12,7 +12,8 @@ const Home = () => (
                 <>
                     <div className="FlexAlignCenter">
                         <h2>Hi, I'm Josh.</h2>
-                        <img className="AvatarMobile" src="/images/avatar.png" alt="My Avatar" />
+                        <img className="Avatar AvatarMobile" src="/images/avatar.png" alt="My Avatar" />
+                        <img className="Avatar AvatarTablet" src="/images/avatar.png" alt="My Avatar" />
                     </div>
                     <h1>A Software Developer from the UK.</h1>
                     <h3>
@@ -28,7 +29,7 @@ const Home = () => (
                 </>
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6} className="FlexJustifyCenter">
-                <img className="AvatarDesktop" src="/images/avatar.png" alt="My Avatar" />
+                <img className="Avatar AvatarDesktop" src="/images/avatar.png" alt="My Avatar" />
             </Grid>
         </Grid>
     </PageTransition>

@@ -1,20 +1,42 @@
-.AvatarDesktop {
-    height: 24rem;
+.Avatar {
     width: auto;
     border-radius: 50%;
+}
+
+.AvatarDesktop {
+    height: 24rem;
     display: block;
 }
 
-.AvatarMobile {
-    height: 14rem;
-    width: auto;
-    border-radius: 50%;
+.AvatarTablet {
+    height: 20rem;
     display: none;
-    margin-left: 1rem;
+    margin-left: 5rem;
+}
+
+.AvatarMobile {
+    height: 15rem;
+    display: none;
+    margin-left: 2rem;
 }
 
 @media only screen and (max-width: 900px) {
     .AvatarDesktop {
+        display: none;
+    }
+    .AvatarTablet {
+        display: block;
+    }
+    .AvatarMobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .AvatarDesktop {
+        display: none;
+    }
+    .AvatarTablet {
         display: none;
     }
     .AvatarMobile {
