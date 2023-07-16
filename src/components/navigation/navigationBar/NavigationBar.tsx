@@ -19,7 +19,7 @@ const menuVariants = {
     },
     open: {
         transition: {
-            staggerChildren: 0.1,
+            staggerChildren: 0.15,
             staggerDirection: 1
         }
     }
@@ -85,9 +85,10 @@ const NavigationBar: React.FC<INavigationBarProps> = ({ currentPage }) => {
                         className="NavigationMenu"
                         initial={{ height: 0 }}
                         animate={{ height: "auto" }}
+                        transition={{ duration: 0.7 }}
                         exit={{
                             height: 0,
-                            transition: { delay: 0.7, duration: 0.3 }
+                            transition: { delay: 0.2, duration: 0.7 }
                         }}
                     >
                         <motion.div
