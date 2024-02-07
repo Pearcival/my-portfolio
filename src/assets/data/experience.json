@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "company": "Raytheon Technologies",
+            "title": "Senior Software Engineer",
+            "description": "I currently work for Raytheon Technologies as a Senior Software Engineer. I am also the Technical Lead on a project and line manage a number of other developers.",
+            "dateRange": "2020 - Present",
+            "pathToLogo": "/images/logo-raytheon.png"
+        },
+        {
+            "company": "BAE Systems",
+            "title": "Lead PLM Developer",
+            "description": "My first role in Software Development was at BAE Systems. I progressed from Developer to Lead PLM Developer over the course of 7 years.",
+            "dateRange": "2013 - 2020",
+            "pathToLogo": "/images/logo-baesystems.png"
+        },
+        {
+            "company": "DXC Technology",
+            "title": "Technical Support Specialist",
+            "description": "I spent the early part of my career in IT working as a Technical Support Specialist.",
+            "dateRange": "2010 - 2013",
+            "pathToLogo": "/images/logo-dxc.png"
+        }
+    ]
+}

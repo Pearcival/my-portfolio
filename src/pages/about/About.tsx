@@ -1,6 +1,8 @@
 import React from "react";
 
 import PageTransition from "../../hoc/transition/PageTransition";
+import Timeline from "../../components/timeline/Timeline";
+import experience from "../../assets/data/experience.json";
 
 const About = () => (
     <PageTransition>
@@ -38,17 +40,8 @@ const About = () => (
             do of course design and architect my solutions with scalability, security and technical
             dependencies in mind.
         </p>
-        <h2>My Interests</h2>
-        <h3>Video Games</h3>
-        <p>
-            I know what you're thinking, "a software developer that plays video games"... how cliché.
-            What can I say? I like what I like.
-        </p>
-        <h3>Sports</h3>
-        <p>
-            I love sports, football, cricket and golf in particular, but I'll play pretty much
-            anything... except bowls. I just don't get that.
-        </p>
+        <h2>Experience</h2>
+        <Timeline timelineItems={experience.data}/>
     </PageTransition>
 );
 

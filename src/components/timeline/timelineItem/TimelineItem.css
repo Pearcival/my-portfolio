@@ -1,0 +1,77 @@
+.TimelineItem {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 2.5rem;
+    width: 50%;
+}
+
+.TimelineItem:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-right: 0;
+}
+
+.TimelineItemContent {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 0 1rem;
+    margin-right: 5rem;
+    position: relative;
+    width: 400px;
+    max-width: 70%;
+    margin-top: 1rem;
+}
+
+.TimelineItem:nth-child(odd) .TimelineItemContent {
+    margin-left: 5rem;
+    margin-right: 0;
+}
+
+.TimelineItemContent .Arrow {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-left-color: #ffa500;
+}
+
+.TimelineItem:nth-child(odd) .TimelineItemContent .Arrow {
+    left: auto;
+    right: 100%;
+    border-left-color: transparent;
+    border-right-color: #ffa500;
+}
+
+.TimelineItem .TimelineItemCenter {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    right: -4rem;
+    width: 8rem;
+    border-radius: 50%;
+    padding-top: 1rem;
+}
+
+.TimelineItem:nth-child(odd) .TimelineItemCenter {
+    right: auto;
+    left: -4rem;
+}
+
+.TimelineItem .TimelineItemCenter .Logo {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
