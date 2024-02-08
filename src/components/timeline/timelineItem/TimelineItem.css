@@ -13,6 +13,12 @@
     }
 }
 
+@media (max-width: 600px) {
+    .TimelineItem {
+        left: 15%;
+    }
+}
+
 .TimelineItem:nth-child(odd) {
     align-self: flex-end;
     justify-content: flex-start;

@@ -16,11 +16,12 @@
 
 @media (max-width: 900px) {
     .Timeline::after {
-        background-color: #ffa500;
-        content: '';
-        position: absolute;
-        left: calc(10%);
-        width: 4px;
-        height: 100%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Timeline::after {
+        left: 15%;
     }
 }
