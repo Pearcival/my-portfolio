@@ -13,3 +13,14 @@
     width: 4px;
     height: 100%;
 }
+
+@media (max-width: 900px) {
+    .Timeline::after {
+        background-color: #ffa500;
+        content: '';
+        position: absolute;
+        left: calc(10%);
+        width: 4px;
+        height: 100%;
+    }
+}

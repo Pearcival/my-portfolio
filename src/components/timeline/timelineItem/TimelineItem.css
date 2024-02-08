@@ -1,16 +1,21 @@
 .TimelineItem {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
     position: relative;
     margin-top: 2.5rem;
     width: 50%;
 }
 
+@media (max-width: 900px) {
+    .TimelineItem {
+        width: 100%;
+        left: 10%;
+    }
+}
+
 .TimelineItem:nth-child(odd) {
     align-self: flex-end;
     justify-content: flex-start;
-    padding-right: 0;
 }
 
 .TimelineItemContent {
@@ -20,14 +25,26 @@
     padding: 0 1rem;
     margin-right: 5rem;
     position: relative;
-    width: 400px;
     max-width: 70%;
     margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .TimelineItemContent {
+        max-width: 50%;
+    }
 }
 
 .TimelineItem:nth-child(odd) .TimelineItemContent {
     margin-left: 5rem;
     margin-right: 0;
+}
+
+@media (max-width: 900px) {
+    .TimelineItemContent {
+        margin-left: 5rem;
+        margin-right: auto;
+    }
 }
 
 .TimelineItemContent .Arrow {
@@ -39,6 +56,15 @@
     width: 0;
     border: 7px solid transparent;
     border-left-color: #ffa500;
+}
+
+@media (max-width: 900px) {
+    .TimelineItemContent .Arrow {
+        left: auto;
+        right: 100%;
+        border-left-color: transparent;
+        border-right-color: #ffa500;
+    }
 }
 
 .TimelineItem:nth-child(odd) .TimelineItemContent .Arrow {
@@ -59,6 +85,13 @@
     width: 8rem;
     border-radius: 50%;
     padding-top: 1rem;
+}
+
+@media (max-width: 900px) {
+    .TimelineItem .TimelineItemCenter {
+        right: auto;
+        left: -4rem;
+    }
 }
 
 .TimelineItem:nth-child(odd) .TimelineItemCenter {
