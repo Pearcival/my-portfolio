@@ -20,7 +20,7 @@
 }
 
 .MenuToggle span.active:nth-child(1) {
-    transform: translate3d(0, 13px, 0) rotate(405deg);
+    transform: translate3d(0, 12px, 0) rotate(405deg);
     width: 70%;
     height: 3px;
 }
