@@ -20,7 +20,6 @@ const Timeline: React.FC<ITimelineProps> = ({
                     description={timelineItem.description}
                     dateRange={timelineItem.dateRange}
                     pathToLogo={timelineItem.pathToLogo}
-                    itemIndex={index}
                     key={index}
                 />
             ))
