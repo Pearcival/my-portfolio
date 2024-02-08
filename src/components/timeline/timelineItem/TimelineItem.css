@@ -8,13 +8,14 @@
 
 @media (max-width: 900px) {
     .TimelineItem {
-        width: 100%;
+        width: 95%;
         left: 10%;
     }
 }
 
 @media (max-width: 600px) {
     .TimelineItem {
+        width: 85%;
         left: 15%;
     }
 }
@@ -22,6 +23,12 @@
 .TimelineItem:nth-child(odd) {
     align-self: flex-end;
     justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+    .TimelineItem:nth-child(odd) {
+        align-self: auto;
+    }
 }
 
 .TimelineItemContent {
