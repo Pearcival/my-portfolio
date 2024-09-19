@@ -19,6 +19,10 @@
         {
             "name": "Professional Scrum Developer",
             "pathToLogo": "/images/cert-psd.png"
+        },
+        {
+            "name": "Terraform Associate",
+            "pathToLogo": "/images/cert-terraform-associate.png"
         }
     ]
 }

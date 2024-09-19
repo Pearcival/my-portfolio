@@ -34,10 +34,6 @@
             "pathToLogo": "/images/logo-css.svg"
         },
         {
-            "name": "Sass",
-            "pathToLogo": "/images/logo-sass.svg"
-        },
-        {
             "name": "Material-UI",
             "pathToLogo": "/images/logo-material-ui.svg"
         },
